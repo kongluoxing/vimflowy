@@ -175,6 +175,14 @@ const actionMap =
 	    moveCursorToEnd(t, offsetCalculator(state))
 	    goToInsertMode(true)
 	  }),
+	  'alt-¬': t => 
+	  {
+		zoomInFocused();
+	  },
+	  'alt-˙': t => 
+	  {
+		zoomOutFocused();
+	  },
 	  'alt-l': t => 
 	  {
 		zoomInFocused();
@@ -193,7 +201,7 @@ const actionMap =
 		// WF.zoomOut(WF.currentItem());
 		zoomOutInstantly();
 	  },
-	  'ctrl-j': t => 
+	  'ctrl-n': t => 
 	  {
 		  if(!WF.focusedItem())
 		  	return;
