@@ -22,6 +22,10 @@
       [
         "contentscript_end.js"
       ]
+    },
+    {
+      "matches": ["https://workflowy.com/*", "https://*.workflowy.com/*"],
+      "css": ["font.css"]
     }
   ],
   "web_accessible_resources": [ 
@@ -32,7 +36,9 @@
     "vimflowyFunctionLibrary.js",
     "keybindings.js",
     "transparentKeybindings.js",
-    "vimflowy.js"
+    "vimflowy.js",
+    "font.css",
+    "custom_font.js"
   ],
   "permissions": [
     "https://workflowy.com/*",
