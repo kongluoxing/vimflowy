@@ -57,6 +57,11 @@ const actionMap =
 
 	    const substring_End = itemName.substring(currentOffset);
 	    const split = substring_End.split(" ");
+			// no space left, move to line end
+			if (split.length === 1) {
+	        moveCursorTo(t, offsetCalculator(state), itemName.length - 1);
+	        return;
+			}
 
 	    let traverseLength = currentOffset;
 	    for(let i = 0; i < split.length; ++i) 
@@ -217,7 +222,7 @@ const actionMap =
 		deleteUnderCursor(t);
 		goToInsertMode();
 	  },
-	  'alt-`': t => 
+	  'alt-†': t => 
 	  {
 	      previousTimeTagCounterMsg = "";
 	      WF.hideMessage();
