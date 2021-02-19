@@ -25,7 +25,7 @@
     },
     {
       "matches": ["https://workflowy.com/*", "https://*.workflowy.com/*"],
-      "css": ["font.css"]
+      "css": ["custom.css"]
     }
   ],
   "web_accessible_resources": [ 

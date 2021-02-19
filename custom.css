@@ -3,3 +3,7 @@ body {
   font-family: "Helvetica Neue" !Important;
   font-size: 110% !Important;
 }
+
+::selection {
+  background-color: #3CABEF !Important;
+}
